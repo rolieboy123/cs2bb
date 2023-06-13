@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Web-Dev E-learning Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="making website using html and css only.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-repeat: no-repeat;
+            min-height: 100%;
+            min-width: 100%;
+            background: whitesmoke;
+        }
+        
+        .btnn {
+            padding: 6px 15px;
+            width: 4rem;
+            background: rgba(255, 255, 255, 3);
+            color: Black;
+            font-size: 1rem;
+            outline: none;
+            cursor: pointer;
+            font-weight: 600;
+            margin-bottom: 30rem;
+            margin-left: 10px;
+            margin-right: 2px;
+
+        }
+        .btnn:hover{
+            background-color: silver;
+        }
+        .ide{
+            background:rgb(104, 103, 103)
+        }
+        .main-editor{
+            
+            width: 100%;
+            box-shadow: 0 2px 3px black;
+            height: 100vh;
+            justify-content: space-between;
+            align-items: center;
+            border: 7px solid gray;
+            margin: 30px 30px 0 0;
+            display: flex;
+        }
+
+        .first {
+            background-color: white;
+            width: 50%;
+            overflow-x: hidden;
+            white-space: pre;
+            box-shadow: 0 1px 1px black;
+            outline: none;
+            padding: 0.6rem;
+            height: 90vh;
+            overflow-y: auto;
+            margin:30px 50px 0 0;
+
+        }
+      
+        .second {
+            background-color: white;
+            width: 50%;
+            overflow-y: auto;
+            white-space: pre;
+            right: 0;
+            box-shadow: 0 1px 1px black;
+            padding: 0.4rem;
+            height: 90vh;
+            margin:30px 70px 0 0;
+        }
+        h4 {
+           
+            margin-bottom: 20px;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: black;
+        }
+        p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 100;
+            font-size: 20px;
+        }
+        .w3-codespan{
+            color: red;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .div-task {
+            margin: 0 0 20px 20px;
+        }
+        .div-task2{
+            margin: 20px 0 20px 20px;
+        }
+        .example{
+            padding: 5px 30px;
+        }
+        .example img{
+            width: 50vw;
+        }
+        .box {
+            background: white;
+            
+            text-align: left;
+            margin: 5px 350px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="div-task">
+        <h1>JavaScript Arrays</h1>
+        <p>An array is a special variable, which can hold more than one value:
+        </p>
+        <p>const cars = ["Saab", "Volvo", "BMW"];</p>
+        <br>
+<h1>Why Use Arrays?</h1>
+<p>If you have a list of items (a list of car names, for example), <br> storing the cars in single variables could look like this:</p>
+
+<p>let car1 = "Saab"; <br>
+    let car2 = "Volvo"; <br>
+    let car3 = "BMW";</p>
+<br>
+<p>However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?
+<br><br>
+    The solution is an array!
+    <br><br>
+    An array can hold many values under a single name, and you can access the values by referring to an index number.</p>
+
+<h3>Creating an Array</h3>
+<p>Using an array literal is the easiest way to create a JavaScript Array.
+<br><br>
+    Syntax:</p>
+    <p>const array_name = [item1, item2, ...];      </p>
+    <h3>Using the JavaScript Keyword new</h3>
+    <h5>Example</h5>
+    <p>const cars = new Array("Saab", "Volvo", "BMW");</p>
+    <br>
+    <h3>Converting an Array to a String</h3>
+    <p>The JavaScript method toString() converts an array to a string of (comma separated) array values.</p>
+    <h5>Example</h5>
+    <p>const fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+        document.getElementById("demo").innerHTML = fruits.toString();</p>
+    </div>
+  
+
+    <div class="ide">
+       
+            <h4>Write The Code Here</h4>
+    
+    <div class="main-editor">
+        <button class="btnn">Run</button>   
+        
+<div class="first" contenteditable></div>
+     <iframe class="second"></iframe>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

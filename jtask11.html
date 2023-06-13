@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Web-Dev E-learning Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="making website using html and css only.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-repeat: no-repeat;
+            min-height: 100%;
+            min-width: 100%;
+            background: whitesmoke;
+        }
+        
+        .btnn {
+            padding: 6px 15px;
+            width: 4rem;
+            background: rgba(255, 255, 255, 3);
+            color: Black;
+            font-size: 1rem;
+            outline: none;
+            cursor: pointer;
+            font-weight: 600;
+            margin-bottom: 30rem;
+            margin-left: 10px;
+            margin-right: 2px;
+
+        }
+        .btnn:hover{
+            background-color: silver;
+        }
+        .ide{
+            background:rgb(104, 103, 103)
+        }
+        .main-editor{
+            
+            width: 100%;
+            box-shadow: 0 2px 3px black;
+            height: 100vh;
+            justify-content: space-between;
+            align-items: center;
+            border: 7px solid gray;
+            margin: 30px 30px 0 0;
+            display: flex;
+        }
+
+        .first {
+            background-color: white;
+            width: 50%;
+            overflow-x: hidden;
+            white-space: pre;
+            box-shadow: 0 1px 1px black;
+            outline: none;
+            padding: 0.6rem;
+            height: 90vh;
+            overflow-y: auto;
+            margin:30px 50px 0 0;
+
+        }
+      
+        .second {
+            background-color: white;
+            width: 50%;
+            overflow-y: auto;
+            white-space: pre;
+            right: 0;
+            box-shadow: 0 1px 1px black;
+            padding: 0.4rem;
+            height: 90vh;
+            margin:30px 70px 0 0;
+        }
+        h4 {
+           
+            margin-bottom: 20px;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: black;
+        }
+        p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 100;
+            font-size: 20px;
+        }
+        .w3-codespan{
+            color: red;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .div-task {
+            margin: 0 0 20px 20px;
+        }
+        .div-task2{
+            margin: 20px 0 20px 20px;
+        }
+        .example{
+            padding: 5px 30px;
+        }
+        .example img{
+            width: 50vw;
+        }
+        .box {
+            background: white;
+            
+            text-align: left;
+            margin: 5px 350px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="div-task">
+        <h1>JavaScript Date Objects</h1>
+        <p style="font-weight: bold;">JavaScript Date Objects let us work with dates:
+<br><br>
+            Thu May 25 2023 11:44:56 GMT+0800 (China Standard Time)
+        </p>
+        <h5>Example</h5>
+        <p>const d = new Date();
+            <br>
+            const d = new Date("2022-03-25");
+        </p>
+        <br>
+<h3>
+    JavaScript Date Output
+</h3>
+<p>By default, JavaScript will use the browser's time zone and display a date as a full text string:
+<br><br>
+    Thu May 25 2023 11:44:56 GMT+0800 (China Standard Time)</p>
+    <br>
+    <h3>Creating Date Objects</h3>
+<p>Date objects are created with the new Date() constructor.
+<br><br>
+    There are 9 ways to create a new date object:</p>
+
+
+    <div>
+        <div class="box">
+        <h4>
+            new Date() <br>
+new Date(date string) <br><br>
+
+new Date(year,month) <br>
+new Date(year,month,day) <br>
+new Date(year,month,day,hours) <br>
+new Date(year,month,day,hours,minutes) <br>
+new Date(year,month,day,hours,minutes,seconds) <br>
+new Date(year,month,day,hours,minutes,seconds,ms) <br><br>
+
+new Date(milliseconds)
+        
+    
+        
+        
+        </h4>
+    </div>
+
+   
+    </div>
+    <h3>new Date(year, month, ...)</h3>
+    <p>new Date(year, month, ...) creates a date object with a specified date and time.
+<br><br>
+        7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order):</p>
+        <br>
+        <h3>JavaScript Stores Dates as Milliseconds</h3>
+        <p>JavaScript stores dates as number of milliseconds since January 01, 1970.
+<br><br>
+            Zero time is January 01, 1970 00:00:00 UTC.
+            <br><br>
+            One day (24 hours) is 86 400 000 milliseconds.
+            <br><br>
+            Now the time is: 1684986296766 milliseconds past January 01, 1970</p>
+<br>
+<h3>new Date(milliseconds)</h3>
+<p>new Date(milliseconds) creates a new date object as milliseconds plus zero time:</p>
+<h5>Example</h5>
+<p>01 January 1970 plus 100 000 000 000 milliseconds is:
+    <br>
+    const d = new Date(100000000000);
+</p>
+
+
+    </div>
+  
+    
+
+    <div class="ide">
+       
+            <h4>Write The Code Here</h4>
+    
+    <div class="main-editor">
+        <button class="btnn">Run</button>   
+        
+<div class="first" contenteditable></div>
+     <iframe class="second"></iframe>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

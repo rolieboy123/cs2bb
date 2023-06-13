@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Web-Dev E-learning Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="making website using html and css only.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-repeat: no-repeat;
+            min-height: 100%;
+            min-width: 100%;
+            background: whitesmoke;
+        }
+        
+        .btnn {
+            padding: 6px 15px;
+            width: 4rem;
+            background: rgba(255, 255, 255, 3);
+            color: Black;
+            font-size: 1rem;
+            outline: none;
+            cursor: pointer;
+            font-weight: 600;
+            margin-bottom: 30rem;
+            margin-left: 10px;
+            margin-right: 2px;
+
+        }
+        .btnn:hover{
+            background-color: silver;
+        }
+        .ide{
+            background:rgb(104, 103, 103)
+        }
+        .main-editor{
+            
+            width: 100%;
+            box-shadow: 0 2px 3px black;
+            height: 100vh;
+            justify-content: space-between;
+            align-items: center;
+            border: 7px solid gray;
+            margin: 30px 30px 0 0;
+            display: flex;
+        }
+
+        .first {
+            background-color: white;
+            width: 50%;
+            overflow-x: hidden;
+            white-space: pre;
+            box-shadow: 0 1px 1px black;
+            outline: none;
+            padding: 0.6rem;
+            height: 90vh;
+            overflow-y: auto;
+            margin:30px 50px 0 0;
+
+        }
+      
+        .second {
+            background-color: white;
+            width: 50%;
+            overflow-y: auto;
+            white-space: pre;
+            right: 0;
+            box-shadow: 0 1px 1px black;
+            padding: 0.4rem;
+            height: 90vh;
+            margin:30px 70px 0 0;
+        }
+        h4 {
+           
+            margin-bottom: 20px;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: black;
+        }
+        p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 100;
+            font-size: 20px;
+        }
+        .w3-codespan{
+            color: red;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .div-task {
+            margin: 0 0 20px 20px;
+        }
+        .div-task2{
+            margin: 20px 0 20px 20px;
+        }
+        .example{
+            padding: 5px 30px;
+        }
+        .example img{
+            width: 50vw;
+        }
+        .box {
+            background: white;
+            
+            text-align: left;
+            margin: 5px 350px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        .table {
+            display: flex;
+            border: 1px solid black;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="div-task">
+        <h1>JavaScript Numbers</h1>
+        <p>JavaScript has only one type of number. Numbers can be written with or without decimals.
+        </p>
+
+
+<h3>Example</h3>
+<p>let x = 3.14;    // A number with decimals <br>
+    let y = 3;       // A number without decimals</p>
+<br>
+<h4>Extra large or extra small numbers can be written with scientific (exponent) notation:</h4>
+<h3>Example</h3>
+<p>let x = 123e5;    // 12300000 <br>
+    let y = 123e-5;   // 0.00123</p> <br>
+    <h1>JavaScript Numbers are Always 64-bit Floating Point</h1>
+    <p>Unlike many other programming languages, JavaScript does not define different types of numbers, like integers, short, long, floating-point etc.
+<br><br>
+        JavaScript numbers are always stored as double precision floating point numbers, following the international IEEE 754 standard.
+   <br><br>     
+        This format stores numbers in 64 bits, where the number (the fraction) is stored in bits 0 to 51, the exponent in bits 52 to 62, and the sign in bit 63:</p>
+
+        <h1>Integer Precision</h1>
+        <p>Integers (numbers without a period or exponent notation) are accurate up to 15 digits.</p>
+        <h3>Example</h3>
+        <p>let x = 999999999999999;   // x will be 999999999999999 <br>
+            let y = 9999999999999999;  // y will be 10000000000000000</p>
+
+            <h1>Infinity</h1>
+            <p>Infinity (or -Infinity) is the value JavaScript will return if you calculate a number outside the largest possible number.</p>
+            <h3>Example</h3>
+            <p>let myNumber = 2; <br>
+                // Execute until Infinity <br>
+                while (myNumber != Infinity) { <br>
+                  myNumber = myNumber * myNumber; <br>
+                }</p>
+
+</div>
+    <div class="ide">
+       
+            <h4>Write The Code Here</h4>
+    
+    <div class="main-editor">
+        <button class="btnn">Run</button>   
+        
+<div class="first" contenteditable></div>
+     <iframe class="second"></iframe>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

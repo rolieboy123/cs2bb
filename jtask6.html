@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Web-Dev E-learning Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="making website using html and css only.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-repeat: no-repeat;
+            min-height: 100%;
+            min-width: 100%;
+            background: whitesmoke;
+        }
+        
+        .btnn {
+            padding: 6px 15px;
+            width: 4rem;
+            background: rgba(255, 255, 255, 3);
+            color: Black;
+            font-size: 1rem;
+            outline: none;
+            cursor: pointer;
+            font-weight: 600;
+            margin-bottom: 30rem;
+            margin-left: 10px;
+            margin-right: 2px;
+
+        }
+        .btnn:hover{
+            background-color: silver;
+        }
+        .ide{
+            background:rgb(104, 103, 103)
+        }
+        .main-editor{
+            
+            width: 100%;
+            box-shadow: 0 2px 3px black;
+            height: 100vh;
+            justify-content: space-between;
+            align-items: center;
+            border: 7px solid gray;
+            margin: 30px 30px 0 0;
+            display: flex;
+        }
+
+        .first {
+            background-color: white;
+            width: 50%;
+            overflow-x: hidden;
+            white-space: pre;
+            box-shadow: 0 1px 1px black;
+            outline: none;
+            padding: 0.6rem;
+            height: 90vh;
+            overflow-y: auto;
+            margin:30px 50px 0 0;
+
+        }
+      
+        .second {
+            background-color: white;
+            width: 50%;
+            overflow-y: auto;
+            white-space: pre;
+            right: 0;
+            box-shadow: 0 1px 1px black;
+            padding: 0.4rem;
+            height: 90vh;
+            margin:30px 70px 0 0;
+        }
+        h4 {
+           
+            margin-bottom: 20px;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: black;
+        }
+        p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 100;
+            font-size: 20px;
+        }
+        .w3-codespan{
+            color: red;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .div-task {
+            margin: 0 0 20px 20px;
+        }
+        .div-task2{
+            margin: 20px 0 20px 20px;
+        }
+        .example{
+            padding: 5px 30px;
+        }
+        .example img{
+            width: 50vw;
+        }
+        .box {
+            background: white;
+            
+            text-align: left;
+            margin: 5px 350px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="div-task">
+        <h1>JavaScript Functions</h1>
+        <p>A JavaScript function is a block of code designed to perform a particular task.
+<br><br>
+            A JavaScript function is executed when "something" invokes it (calls it).
+        </p>
+<p style="color:green;">// Function to compute the product of p1 and p2</p>
+   <p>function myFunction(p1, p2) { <br>
+      return p1 * p2;
+    }</p>
+<br>
+<h1>JavaScript Function Syntax</h1>
+<p>A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+<br><br>
+    Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
+    <br><br>
+    The parentheses may include parameter names separated by commas: <br>
+    (parameter1, parameter2, ...)
+    <br><br>
+    The code to be executed, by the function, is placed inside curly brackets: {}</p>
+    
+    <p>function name(parameter1, parameter2, parameter3) { <br>
+    } </p>
+    <p style="color:green;">   // code to be executed
+      </p>
+
+      <h1>Function Return</h1>
+      <p>When JavaScript reaches a return statement, the function will stop executing.
+<br><br>
+        If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.
+        <br><br>
+        Functions often compute a return value. The return value is "returned" back to the "caller":</p>
+    <h3>Example</h3>
+    <p style="color:green;">// Function is called, the return value will end up in x</p>
+       <p>let x = myFunction(4, 3);
+        <br><br>
+        function myFunction(a, b) { <br> 
+        // Function returns the product of a and b <br>
+          return a * b; <br> 
+        }</p>
+</div>
+    
+   
+  <h1>Exam</h1>
+    <div>
+    <div class="box">
+    <h4>
+        &lt;!DOCTYPE html&gt; <br>
+        &lt;html&gt; <br>
+        &lt;head&gt; <br>
+        &lt;body&gt; <br><br>
+        &lt;h1&gt;My First Paragraphs&lt;/h1&gt; <br><br>
+        &lt;p&gt;My first paragraph&lt;/p&gt; <br><br>
+        &lt;/body&gt; <br>
+        &lt;/html&gt;
+    
+
+    
+    
+    </h4>
+</div>
+</div>
+    <div class="ide">
+       
+            <h4>Write The Code Here</h4>
+    
+    <div class="main-editor">
+        <button class="btnn">Run</button>   
+        
+<div class="first" contenteditable></div>
+     <iframe class="second"></iframe>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

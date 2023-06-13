@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Web-Dev E-learning Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="making website using html and css only.">
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-repeat: no-repeat;
+            min-height: 100%;
+            min-width: 100%;
+            background: whitesmoke;
+        }
+
+        #task-html,
+        #task-js,
+        #task-css {
+            text-align: center;
+            color: black;
+            font-family: courier;
+            font-weight: bold;
+            font-size: 41px;
+            margin-top: 50px;
+        }
+
+        .divz {
+
+            transition: .2s;
+            margin-left: 10px;
+            padding-right: 90px;
+        }
+
+        .divz:hover {
+            background: rgba(46, 46, 46, 0.5);
+        }
+
+        .web {
+            text-decoration: none;
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: 15px;
+
+        }
+
+        .btn-links {
+            display: flex;
+            justify-content: space-between;
+            margin: 25px 8px 0 8px;
+        }
+
+        .btn-links .z {
+            background: silver;
+            padding: 6px 21px;
+            transition: 0.4s;
+            color: black;
+            text-align: center;
+            border-radius: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .btn-links .z:hover {
+            background: gray;
+
+        }
+
+        #searchbar {
+            margin-top: 15%;
+            padding: 8px 15px;
+            border-radius: 10px;
+        }
+
+        input[type=text] {
+            width: 30%;
+            -webkit-transition: width 0.15s ease-in-out;
+            transition: width 0.15s ease-in-out;
+        }
+
+        /* When the input field gets focus,
+        change its width to 100% */
+        input[type=text]:focus {
+            width: 87%;
+        }
+
+        #open {
+            background-color: gray;
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 8px 10px;
+            font-size: 15px;
+            border-radius: 10px;
+            margin-left: 38px;
+        }
+
+        #open:hover {
+            background: silver;
+        }
+
+        /* Darker background on mouse-over */
+    </style>
+</head>
+
+<body>
+    <div class="btn-links">
+        <a class="z" href="#task-html">HTML</a>
+        <a class="z" href="#task-css">CSS</a>
+        <a class="z" href="#task-js">JScript</a>
+
+    </div>
+
+    <input id="searchbar" onkeyup="search_webdev()" type="text" name="search" placeholder="Search Here!">
+
+    <br>
+    <br>
+    <div id="list">
+        <h1 id="task-html">HTML</h1>
+        <div class="divz">
+            <a href="htask1.html" target="task1" class="web">HTML Basic Examples</a>
+        </div>
+        
+        <br>
+        <div class="divz">
+            <a href="htask2.html" target="task1" class="web">HTML Elements</a>
+
+        </div>
+        <br> 
+        <div class="divz">
+            <a href="htask3.html" target="task1" class="web">HTML Headings</a>
+        </div> <br> 
+        <div class="divz">
+            <a href="htask4.html" target="task1" class="web">HTML Paragraphs</a>
+        </div> <br> 
+        <div class="divz">
+            <a href="htask5.html" target="task1" class="web">HTML Text Formatting</a>
+        </div> <br> 
+        <div class="divz">
+            <a href="htask6.html" target="task1" class="web">HTML Comments</a>
+        </div> <br> 
+        <div class="divz">
+            <a href="htask7.html" target="task1" class="web">HTML Links</a>
+        </div> <br> 
+        <div class="divz">
+            <a href="htask8.html" target="task1" class="web">HTML Images</a>
+        </div> <br>
+        <div class="divz">
+            <a href="htask9.html" target="task1" class="web">HTML Lists</a>
+        </div>
+        <br>
+        <div class="divz">
+            <a href="htask10.html" target="task1" class="web">HTML Tables</a>
+        </div> <br>
+        <div class="divz">
+            <a href="htask11.html" target="task1" class="web">HTML Forms</a>
+        </div> <br>
+        <div class="divz">
+            <a href="htask12.html" target="task1" class="web">HTML Video</a>
+        </div> <br>
+        <div class="divz">
+            <a href="htask13.html" target="task1" class="web">HTML Layout Elements</a>
+        </div> <br>
+        <div class="divz">
+            <a href="htask14.html" target="task1" class="web">HTML class Attribute</a>
+        </div> <br>
+        <div class="divz">
+            <a href="htask15.html" target="task1" class="web">HTML id Attribute</a>
+        </div> <br>
+        <br>
+        <a href="PDF/htmlfullcourse.pdf" id="open" target="home" class="web">OPEN HTML FULL COURSE</a>
+        <br> <br>
+        <h1 id="task-css">CSS</h1>
+        <div class="divz">
+            <a href="ctask1.html" target="task1" class="web">CSS How To</a>
+        </div> <br>
+        <div class="divz">
+            <a href="ctask2.html" target="task1" class="web">CSS Colors</a>
+        </div> <br>
+        <div class="divz">
+            <a href="ctask3.html" target="task1" class="web">CSS Backgrounds</a>
+        </div> <br>
+        <div class="divz">
+            <a href="ctask4.html" target="task1" class="web">CSS Margins</a>
+        </div> <br>
+        <div class="divz">
+            <a href="ctask5.html" target="task1" class="web">CSS Padding</a>
+        </div> <br>
+        <div class="divz">
+            <a href="ctask6.html" target="task1" class="web">CSS Fonts</a>
+        </div> <br>
+        <div class="divz">
+            <a href="ctask7.html" target="task1" class="web">CSS Links</a>
+        </div> <br>
+        <div class="divz">
+            <a href="ctask8.html" target="task1" class="web">CSS Tables</a>
+        </div> <br>
+        <div class="divz">
+            <a href="ctask9.html" target="task1" class="web">CSS Display</a>
+        </div> <br>
+        <div class="divz">
+            <a href="ctask10.html" target="task1" class="web">CSS Outline</a>
+        </div> <br>
+        <div class="divz">
+            <a href="ctask11.html" target="task1" class="web">CSS Image Gallery</a>
+        </div> <br>
+        <div class="divz">
+            <a href="ctask12.html" target="task1" class="web">CSS Units</a>
+        </div> <br>
+        <div class="divz">
+            <a href="ctask13.html" target="task1" class="web">CSS Borders</a>
+        </div><br>
+        <div class="divz">
+            <a href="ctask14.html" target="task1" class="web">CSS Opacity</a>
+        </div> <br>
+        <div class="divz">
+            <a href="ctask15.html" target="task1" class="web">CSS Height/Width</a>
+        </div> <br> <br> 
+        <a href="PDF/cssfullcourse.pdf" target="home" id="open" class="web">OPEN CSS FULL COURSE</a>
+        <br><br>
+        <h1 id="task-js">Javascript</h1>
+
+        <div class="divz">
+            <a href="jtask1.html" target="task1" class="web">JS Where To</a>
+        </div> <br>
+        <div class="divz">
+            <a href="jtask2.html" target="task1" class="web">JS Output</a>
+        </div> <br>
+        <div class="divz">
+            <a href="jtask3.html" target="task1" class="web">JS Statement</a>
+        </div> <br>
+        <div class="divz">
+            <a href="jtask4.html" target="task1" class="web">JS Operators</a>
+        </div> <br>
+        <div class="divz">
+            <a href="jtask5.html" target="task1" class="web">JS Assignment</a>
+        </div> <br>
+        <div class="divz">
+            <a href="jtask6.html" target="task1" class="web">JS Functions</a>
+        </div> <br>
+        <div class="divz">
+            <a href="jtask7.html" target="task1" class="web">JS Objects</a>
+        </div> <br>
+        <div class="divz">
+            <a href="jtask8.html" target="task1" class="web">JS Strings</a>
+        </div> <br>
+        <div class="divz">
+            <a href="jtask9.html" target="task1" class="web">JS Numbers</a>
+        </div> <br>
+        <div class="divz">
+            <a href="jtask10.html" target="task1" class="web">JS Arrays</a>
+        </div> <br>
+        <div class="divz">
+            <a href="jtask11.html" target="task1" class="web">JS Dates</a>
+        </div> <br>
+        <div class="divz">
+            <a href="" class="web">JS Random</a>
+        </div> <br>
+        <div class="divz">
+            <a href="" class="web">JS Sets</a>
+        </div> <br>
+        <div class="divz">
+            <a href="" class="web">JS Classes</a>
+        </div> <br>
+        <div class="divz">
+            <a href="" class="web">JS Mistakes</a>
+        </div>
+        <br>
+        <br>
+        <a href="PDF/jsfullcourse.pdf" target="home" id="open" class="web">OPEN JS FULL COURSE</a>
+    </div>
+    <br><br>
+    <script src="link.js"></script>
+</body>
+
+</html>
